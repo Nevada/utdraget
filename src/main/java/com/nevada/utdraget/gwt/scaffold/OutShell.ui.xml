@@ -1,0 +1,35 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:my='urn:import:com.nevada.utdraget.gwt.scaffold'>
+
+	<ui:style src="MyUi.css" />
+		
+	<ui:style field='otherStyle'>
+		.hot {
+			color: magenta;
+		}
+		
+		.pretty {
+			width: 100%;
+		}
+	</ui:style>
+	<g:ScrollPanel>
+		<g:VerticalPanel styleName='{otherStyle.pretty}'>
+			<g:VerticalPanel styleName='{style.centered}'>
+				<my:Top ui:field="top" />
+				<g:HorizontalPanel>
+					<my:Login ui:field="login"/>
+					<g:DeckPanel ui:field="main" styleName='{style.container}' />
+				</g:HorizontalPanel>
+			</g:VerticalPanel>
+			
+		</g:VerticalPanel>
+	</g:ScrollPanel>
+</ui:UiBinder>
+
+	<!--
+		<g:DockLayoutPanel unit='EM' styleName='{style.centered}'> <g:west
+		size='27'> <my:Login /> </g:west> <g:center> <g:DeckPanel
+		ui:field="main" styleName='{style.container}' /> </g:center>
+		</g:DockLayoutPanel>
+	-->
