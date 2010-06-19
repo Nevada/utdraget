@@ -19,7 +19,7 @@ privileged aspect RegularUserDataOnDemand_Roo_DataOnDemand {
         com.nevada.utdraget.RegularUser obj = new com.nevada.utdraget.RegularUser();
         obj.setEmail("email_" + index);
         obj.setName("name_" + index);
-        obj.setPassword("password_" + index);
+        obj.setPw("pw_" + index);
         return obj;
     }
     

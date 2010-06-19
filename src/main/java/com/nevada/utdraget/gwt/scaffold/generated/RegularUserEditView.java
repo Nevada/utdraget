@@ -48,7 +48,7 @@ public class RegularUserEditView extends Composite implements
   @UiField
   TextBox name;
   @UiField
-  TextBox password;
+  TextBox pw;
   @UiField
   Button cancel;
   @UiField

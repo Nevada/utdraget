@@ -13,7 +13,7 @@ public class RegularUser {
 
     private String name;
 
-    private String password;
-
     private String email;
+
+    private String pw;
 }

@@ -9,8 +9,8 @@ privileged aspect RegularUser_Roo_ToString {
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("Version: ").append(getVersion()).append(", ");
         sb.append("Name: ").append(getName()).append(", ");
-        sb.append("Password: ").append(getPassword()).append(", ");
-        sb.append("Email: ").append(getEmail());
+        sb.append("Email: ").append(getEmail()).append(", ");
+        sb.append("Pw: ").append(getPw());
         return sb.toString();
     }
     

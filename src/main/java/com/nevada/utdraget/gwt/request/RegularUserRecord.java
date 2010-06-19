@@ -16,11 +16,11 @@ public interface RegularUserRecord extends Record {
 
     Property<java.lang.String> name = new com.google.gwt.valuestore.shared.Property<java.lang.String>("name", "Name", java.lang.String.class);
 
-    Property<java.lang.String> password = new com.google.gwt.valuestore.shared.Property<java.lang.String>("password", "Password", java.lang.String.class);
+    Property<java.lang.String> pw = new com.google.gwt.valuestore.shared.Property<java.lang.String>("pw", "Pw", java.lang.String.class);
 
     abstract String getEmail();
 
     abstract String getName();
 
-    abstract String getPassword();
+    abstract String getPw();
 }

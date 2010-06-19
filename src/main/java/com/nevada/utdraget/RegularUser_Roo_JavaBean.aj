@@ -12,20 +12,20 @@ privileged aspect RegularUser_Roo_JavaBean {
         this.name = name;
     }
     
-    public String RegularUser.getPassword() {
-        return this.password;
-    }
-    
-    public void RegularUser.setPassword(String password) {
-        this.password = password;
-    }
-    
     public String RegularUser.getEmail() {
         return this.email;
     }
     
     public void RegularUser.setEmail(String email) {
         this.email = email;
+    }
+    
+    public String RegularUser.getPw() {
+        return this.pw;
+    }
+    
+    public void RegularUser.setPw(String pw) {
+        this.pw = pw;
     }
     
 }

@@ -11,11 +11,11 @@
 	
 	<g:TabLayoutPanel barUnit="EM" barHeight="5" ui:field="tabPanel">
 		<g:tab>
-			<g:header>info</g:header>
+			<g:header>app</g:header>
 			<g:HTMLPanel>salföj</g:HTMLPanel>
 		</g:tab>	
 		<g:tab>
-			<g:header>scaffold</g:header>
+			<g:header>data</g:header>
 			<my:ScaffoldShell ui:field="shell"/>
 		</g:tab>
 	</g:TabLayoutPanel>

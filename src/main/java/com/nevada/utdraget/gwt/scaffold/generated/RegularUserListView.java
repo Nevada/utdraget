@@ -47,7 +47,7 @@ public class RegularUserListView extends AbstractRecordListView<RegularUserRecor
         return String.valueOf(obj);
       }    
 }));  
-    columns.add(new PropertyColumn<RegularUserRecord, java.lang.String>(RegularUserRecord.password, new Renderer<java.lang.String>() {
+    columns.add(new PropertyColumn<RegularUserRecord, java.lang.String>(RegularUserRecord.pw, new Renderer<java.lang.String>() {
       public String render(java.lang.String obj) {
         return String.valueOf(obj);
       }    

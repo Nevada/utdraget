@@ -32,7 +32,7 @@ public class RegularUserDetailsView extends Composite implements
   @UiField
   SpanElement name;
   @UiField
-  SpanElement password;
+  SpanElement pw;
   @UiField
   SpanElement idSpan;
   @UiField
@@ -78,7 +78,7 @@ public class RegularUserDetailsView extends Composite implements
     this.record = record;
     email.setInnerText(String.valueOf(record.getEmail()));
     name.setInnerText(String.valueOf(record.getName()));
-    password.setInnerText(String.valueOf(record.getPassword()));
+    pw.setInnerText(String.valueOf(record.getPw()));
     idSpan.setInnerText(record.getId());
     versionSpan.setInnerText(record.getVersion().toString());
   }
