@@ -22,3 +22,7 @@ persistence setup --provider DATANUCLEUS --database MYSQL
 field string --class ~.RegularUser --fieldName pw
 exit
 // Spring Roo 1.1.0.M1 [rev 3a0b8a3] log closed at 2010-06-19 21:16:25
+finder list
+finder add --finderName findRegularUsersByName
+// [failed] finder add --finderName findRegularUsersByNameAndPassword
+finder add --finderName findRegularUsersByNameAndPw

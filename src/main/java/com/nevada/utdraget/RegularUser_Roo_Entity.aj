@@ -28,6 +28,10 @@ privileged aspect RegularUser_Roo_Entity {
     @Column(name = "version")
     private Integer RegularUser.version;
     
+    public RegularUser.new() {
+        super();
+    }
+
     public Long RegularUser.getId() {
         return this.id;
     }

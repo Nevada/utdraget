@@ -8,8 +8,13 @@ import org.springframework.roo.addon.entity.RooEntity;
 @Entity
 @RooJavaBean
 @RooToString
-@RooEntity
+@RooEntity(finders = { "findRegularUsersByName", "findRegularUsersByNameAndPw" })
 public class RegularUser {
+
+    public RegularUser(String name, String pw) {
+        this.name = name;
+        this.pw = pw;
+    }
 
     private String name;
 
