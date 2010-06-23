@@ -4,7 +4,7 @@
 
 	<ui:style src="MyUi.css" />
 		
-	<ui:with field='images' type='com.example.roopizza.gwt.scaffold.Resources' />
+	<ui:with field='images' type='com.nevada.utdraget.gwt.scaffold.Resources' />
 
 	<g:HTMLPanel>
 		<div class='{style.container2}'>

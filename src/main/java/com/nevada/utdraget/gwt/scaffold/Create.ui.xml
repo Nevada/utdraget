@@ -4,7 +4,7 @@
 
 	<ui:style src="MyUi.css" />
 		
-	<ui:style field='style2' type='com.example.roopizza.gwt.scaffold.Create.MyStyle'>
+	<ui:style field='style2' type='com.nevada.utdraget.gwt.scaffold.Create.MyStyle'>
 		.green { background-color: #baf7b6;}
 		.red { background-color: #f7c4b6;}
 		.greenText { color: green;}
@@ -12,7 +12,7 @@
   	</ui:style>
 
 
-	<ui:with field='images' type='com.example.roopizza.gwt.scaffold.Resources' />
+	<ui:with field='images' type='com.nevada.utdraget.gwt.scaffold.Resources' />
 
 	<g:HTMLPanel>
 
