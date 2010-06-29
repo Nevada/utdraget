@@ -12,7 +12,7 @@
 	<g:TabLayoutPanel barUnit="EM" barHeight="5" ui:field="tabPanel">
 		<g:tab>
 			<g:header>app</g:header>
-			<g:Label>kuk</g:Label>
+			<g:Label>nylabel</g:Label>
 		</g:tab>	
 		<g:tab>
 			<g:header>data</g:header>

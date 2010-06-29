@@ -435,6 +435,14 @@
             <version>5.1.12</version>
         </dependency>
     </dependencies>
+	<ciManagement>
+		<system>hudson</system>
+		<url>http://localhost:8080/job/Utdraget/</url>
+	</ciManagement>
+	<organization>
+		<name>Nevada</name>
+		<url>http://nevadademo.appspot.com/</url>
+	</organization>
 	<build>
 		<plugins>
 			<plugin>
