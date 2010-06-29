@@ -1,0 +1,3 @@
+persistence setup --provider DATANUCLEUS --database GOOGLE_APP_ENGINE --applicationId utdraget
+perform command --mavenCommand "gae:deploy -DskipTests"
+persistence setup --provider DATANUCLEUS --database HYPERSONIC_IN_MEMORY
