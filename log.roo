@@ -42,3 +42,14 @@ persistence setup --provider DATANUCLEUS --database GOOGLE_APP_ENGINE --applicat
 perform command --mavenCommand "gae:deploy -DskipTests"
 persistence setup --provider DATANUCLEUS --database HYPERSONIC_IN_MEMORY
 // script deploy.roo
+// Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-06-29 23:18:18
+// Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-06-29 23:19:11
+// [failed] script deploy
+// [failed] script deploy.roo
+// [failed] script --file deploy.roo
+persistence setup --provider DATANUCLEUS --database GOOGLE_APP_ENGINE --applicationId utdraget
+perform command --mavenCommand "gae:deploy -DskipTests"
+persistence setup --provider DATANUCLEUS --database HYPERSONIC_IN_MEMORY
+// script --file deploy.roo
+exit
+// Spring Roo 1.1.0.M1 [rev 3a0b8a3] log closed at 2010-06-29 23:23:00
