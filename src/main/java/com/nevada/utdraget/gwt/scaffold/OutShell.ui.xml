@@ -13,18 +13,19 @@
 			width: 100%;
 		}
 	</ui:style>
-	<g:ScrollPanel>
+	
+	<g:ScrollPanel ui:field="scroller">
 		<g:VerticalPanel styleName='{otherStyle.pretty}'>
 			<g:VerticalPanel styleName='{style.centered}'>
 				<my:Top ui:field="top" />
 				<g:HorizontalPanel>
 					<my:Login ui:field="login"/>
-					<g:DeckPanel ui:field="main" styleName='{style.container}' />
+						<g:DeckPanel ui:field="main" styleName='{style.container}' />
 				</g:HorizontalPanel>
 			</g:VerticalPanel>
-			
 		</g:VerticalPanel>
 	</g:ScrollPanel>
+
 </ui:UiBinder>
 
 	<!--

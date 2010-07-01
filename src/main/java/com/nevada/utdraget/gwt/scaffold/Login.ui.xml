@@ -7,47 +7,60 @@
 	<ui:with field='images' type='com.nevada.utdraget.gwt.scaffold.Resources' />
 
 	<g:HTMLPanel>
+
 		<div class='{style.container2}'>
+			<g:Label styleName='{style.fl}' ui:field="error"></g:Label>
 			<h2>Logga in</h2>
-			<p>
-				&nbsp;
-				<g:Label styleName='{style.fl}' ui:field="error"></g:Label>
-			</p>
-			<p>
-				Användarnamn:
-				<g:TextBox styleName='{style.fl}' ui:field="user" />
-			</p>
-			<p>
-				Lösenord:
-				<g:PasswordTextBox styleName='{style.fl}'
-					ui:field="pass" />
-			</p>
-			<p>
-				&nbsp;
-				<g:Button text="logga in" addStyleNames='{style.fl}' ui:field="login" />
-			</p>
-			<p>
+			<table border="0" cellpadding="0" cellspacing="3">
+				<tr>
+					<td width="120">Användarnamn:</td>
+					<td>
+						<g:TextBox styleName='{style.fl}' ui:field="user" />
+					</td>
+				</tr>
+				<tr>
+					<td>Lösenord:</td>
+					<td>
+						<g:PasswordTextBox styleName='{style.fl}'
+							ui:field="pass" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<g:Button text="logga in" addStyleNames='{style.fl}'
+							ui:field="login" />
+					</td>
+				</tr>
+			</table>
+			<br />
+			<span style="float: left;">
 				<g:Anchor href='javascript:;' ui:field="create">Skapa konto</g:Anchor>
-				<g:Anchor href='javascript:;' styleName='{style.fl}'>Glömt lösenord?</g:Anchor>
-
-			</p>
-		</div>
-
-		<div class='{style.container3}'>
-
-			<h2>Utdraget.se - en helt gratis tjänst!</h2>
-
-			<p>Här kan du på några få minuter få månader av dina inköp
-				automatiskt kategoriserade, för att sedan studera dina
-				konsumtionsvanor i enkla diagram. Du kan även på några få sekunder
-				skapa en budget baserad på ett genomsnitt av dina tidigare utgifter.</p>
-			
-			<h2>Tipsa om utdraget.se</h2>
-
-			Tipsa dina vänner via dessa sajter:
-			<g:Image resource='{images.sites}' />
+			</span>
+			<span style="float: right;">
+				<g:Anchor href='javascript:;'>Glömt lösenord?</g:Anchor>
+			</span>
 
 		</div>
-
 	</g:HTMLPanel>
+
+	<!--
+		<g:HTMLPanel> <div class='{style.container2}'> <h2>Logga in</h2> <p>
+		&nbsp; <g:Label styleName='{style.fl}' ui:field="error"></g:Label>
+		</p> <p> Användarnamn: <g:TextBox styleName='{style.fl}'
+		ui:field="user" /> </p> <p> Lösenord: <g:PasswordTextBox
+		styleName='{style.fl}' ui:field="pass" /> </p> <p> &nbsp; <g:Button
+		text="logga in" addStyleNames='{style.fl}' ui:field="login" /> </p>
+		<p> <g:Anchor href='javascript:;' ui:field="create">Skapa
+		konto</g:Anchor> <g:Anchor href='javascript:;'
+		styleName='{style.fl}'>Glömt lösenord?</g:Anchor> </p> </div> <div
+		class='{style.container3}'> <h2>Utdraget.se - en helt gratis
+		tjänst!</h2> <p>Här kan du på några få minuter få månader av dina
+		inköp automatiskt kategoriserade, för att sedan studera dina
+		konsumtionsvanor i enkla diagram. Du kan även på några få sekunder
+		skapa en budget baserad på ett genomsnitt av dina tidigare
+		utgifter.</p> <h2>Tipsa om utdraget.se</h2> Tipsa dina vänner via
+		dessa sajter: <g:Image resource='{images.sites}' /> </div>
+
+		</g:HTMLPanel>
+	-->
 </ui:UiBinder> 

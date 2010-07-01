@@ -18,6 +18,7 @@ public class Scaffold implements EntryPoint {
     loading.getParentElement().removeChild(loading);
 
     /* And show the user the shell */
+    //Shell kjell = new Shell();
     Shell kjell = new Shell();
     RootLayoutPanel.get().add(kjell);
   }

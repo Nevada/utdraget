@@ -18,20 +18,22 @@ public class App extends Composite {
 	OutShell os = new OutShell();
 	InShell is = new InShell();
 	
-
+	final int OUT = 0;
+	final int IN = 1;
+	
 	public App() {
 		initWidget(uiBinder.createAndBindUi(this));
 
 		os.login.setListener(new Login.Listener() {
 			public void onLoginClicked(String user) {
-				main.showWidget(1);
+				main.showWidget(IN);
 				is.setUser(user);
 			}
 		});
 		
 		is.top.setListener(new InTop.Listener() {
 			public void onLogoutClicked() {
-				main.showWidget(0);
+				main.showWidget(OUT);
 			}
 			public void onGraphClicked() {
 			}
@@ -42,7 +44,7 @@ public class App extends Composite {
 		main.add(os);
 		main.add(is);
 		main.setAnimationEnabled(false);
-		main.showWidget(0);
+		main.showWidget(OUT);
 	}
 
 }
