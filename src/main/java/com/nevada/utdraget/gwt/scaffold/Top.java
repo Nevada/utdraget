@@ -1,6 +1,7 @@
 package com.nevada.utdraget.gwt.scaffold;
 
 import com.google.gwt.core.client.GWT;
+import com.google.gwt.dom.client.DivElement;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
 import com.google.gwt.uibinder.client.UiField;
@@ -20,11 +21,13 @@ public class Top extends Composite {
 		void onBloggClicked();
 		void onPolicyClicked();
 		void onAboutClicked();
+		void onLogoClicked();
 	}
 
 	interface TopUiBinder extends UiBinder<Widget, Top> {
 	}
 
+	@UiField Anchor logo;
 	@UiField Anchor how;
 	@UiField Anchor blogg;
 	@UiField Anchor policy;
@@ -37,7 +40,12 @@ public class Top extends Composite {
 	public void setListener(Listener listener) {
 		this.listener = listener;
 	}
-	
+	@UiHandler("logo")
+	void onLogoClicked(ClickEvent event) {
+		if (listener != null) {
+			listener.onLogoClicked();
+		}
+	}
 	@UiHandler("how")
 	void onHowClicked(ClickEvent event) {
 		if (listener != null) {

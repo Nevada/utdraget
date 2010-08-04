@@ -20,7 +20,7 @@ privileged aspect RegularUser_Roo_Entity {
     transient EntityManager RegularUser.entityManager;
     
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long RegularUser.id;
     

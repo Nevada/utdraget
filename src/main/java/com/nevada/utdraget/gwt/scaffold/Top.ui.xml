@@ -60,7 +60,7 @@
 		<div class='{style.top}'>
 
 			<div class='{style.buttonDiv}'>
-				<div class='{style.front_logo}' href='javascript:;'></div>
+				<g:Anchor styleName='{style.front_logo}' href='javascript:;' ui:field="logo"></g:Anchor>
 				<div class='{style.title}'>Sveriges största och enklaste "utdragstjänst"</div>
 			</div>
 

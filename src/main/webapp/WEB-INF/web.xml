@@ -112,6 +112,17 @@
         <url-pattern>/app/*</url-pattern>
     </servlet-mapping>
     
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>userServiceImpl</servlet-name>
+    <servlet-class>com.nevada.utdraget.gwt.rpc.UserServiceImpl</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>userServiceImpl</servlet-name>
+    <url-pattern>/applicationScaffold/userService</url-pattern>
+  </servlet-mapping>
+    
     
     
     <servlet-mapping>
