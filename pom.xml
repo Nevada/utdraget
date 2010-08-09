@@ -441,15 +441,10 @@
             <artifactId>json</artifactId>
             <version>20090211</version>
         </dependency>
-    <dependency>
-            <groupId>com.google.appengine.orm</groupId>
-            <artifactId>datanucleus-appengine</artifactId>
-            <version>1.0.7.final</version>
-        </dependency>
         <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-api-1.0-sdk</artifactId>
-            <version>${gae.version}</version>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>1.8.0.10</version>
         </dependency>
     </dependencies>
 	<ciManagement>
@@ -658,23 +653,6 @@
                         <phase>prepare-package</phase>
                         <goals>
                             <goal>compile</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        <plugin>
-                <groupId>net.kindleit</groupId>
-                <artifactId>maven-gae-plugin</artifactId>
-                <version>0.5.7</version>
-                <configuration>
-						<unpackVersion>${gae.version}</unpackVersion>
-					</configuration>
-                <executions>
-                    <execution>
-                        <id/>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>unpack</goal>
                         </goals>
                     </execution>
                 </executions>

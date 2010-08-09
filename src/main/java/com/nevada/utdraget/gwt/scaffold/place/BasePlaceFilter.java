@@ -12,15 +12,15 @@ package com.nevada.utdraget.gwt.scaffold.place;
  * @param <T> the type of the default value
  */
 public class BasePlaceFilter<T> implements ApplicationPlaceFilter<T> {
-  private final T defaultValue;
+	private final T defaultValue;
   
-  public BasePlaceFilter(T defaultValue) {
-    this.defaultValue = defaultValue;
-  }
-  public T filter(RegularUserScaffoldPlace place) {
-    return defaultValue;
-  }
-  public T filter(ApplicationListPlace place) {
-    return defaultValue;
-  }
+	public BasePlaceFilter(T defaultValue) {
+		this.defaultValue = defaultValue;
+	}
+	public T filter(RegularUserScaffoldPlace place) {
+		return defaultValue;
+	}
+	public T filter(ApplicationListPlace place) {
+		return defaultValue;
+	}
 }

@@ -14,33 +14,29 @@ import com.nevada.utdraget.gwt.scaffold.place.RegularUserScaffoldPlace;
 /**
  * Finds the activity to run for a particular {@link ScaffoldPlace}.
  */
-public final class ScaffoldMobileActivities implements
-    ActivityMapper<ApplicationPlace> {
+public final class ScaffoldMobileActivities implements ActivityMapper<ApplicationPlace> {
+	private final ActivityMapper<ApplicationListPlace> listActivitiesBuilder;
+	private final ActivityMapper<RegularUserScaffoldPlace> regularUserActivitiesBuilder;
 
-  private final ActivityMapper<ApplicationListPlace> listActivitiesBuilder;
-  private final ActivityMapper<RegularUserScaffoldPlace> regularUserActivitiesBuilder;
+	/**
+	 * @param listActivitiesBuilder
+	 * @param requestFactory
+	 * @param placeController
+	 */
+	public ScaffoldMobileActivities(ActivityMapper<ApplicationListPlace> listActivitiesBuilder, ApplicationRequestFactory requestFactory, PlaceController<ApplicationPlace> placeController) {
+    	this.listActivitiesBuilder = listActivitiesBuilder;
+		this.regularUserActivitiesBuilder = new RegularUserActivitiesMapper(
+		requestFactory, placeController); 
+	}
 
-  /**
-   * @param requestFactory
-   * @param placeController
-   */
-  public ScaffoldMobileActivities(
-      ActivityMapper<ApplicationListPlace> listActivitiesBuilder,
-      ApplicationRequestFactory requestFactory,
-      PlaceController<ApplicationPlace> placeController) {
-    this.listActivitiesBuilder = listActivitiesBuilder;
-    this.regularUserActivitiesBuilder = new RegularUserActivitiesMapper(
-        requestFactory, placeController); 
-  }
-
-   public Activity getActivity(ApplicationPlace place) {
-    return place.acceptFilter(new ApplicationPlaceFilter<Activity>() {
-      public Activity filter(RegularUserScaffoldPlace place) {
-        return regularUserActivitiesBuilder.getActivity(place);
-      }
-      public Activity filter(ApplicationListPlace place) {
-        return listActivitiesBuilder.getActivity(place);
-      }
-    });
-  }
+	public Activity getActivity(ApplicationPlace place) {
+		return place.acceptFilter(new ApplicationPlaceFilter<Activity>() {
+			public Activity filter(RegularUserScaffoldPlace place) {
+				return regularUserActivitiesBuilder.getActivity(place);
+			}
+			public Activity filter(ApplicationListPlace place) {
+				return listActivitiesBuilder.getActivity(place);
+			}
+		});
+	}
 }

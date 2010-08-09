@@ -57,3 +57,19 @@ exit
 persistence setup --provider DATANUCLEUS --database GOOGLE_APP_ENGINE --applicationId utdraget
 // Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-07-01 22:14:16
 persistence setup --provider DATANUCLEUS --database GOOGLE_APP_ENGINE --applicationId utdraget
+// Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-08-04 14:18:39
+// Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-08-04 14:21:01
+// Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-08-04 14:22:31
+persistence setup --database HYPERSONIC_IN_MEMORY --provider DATANUCLEUS 
+persistence setup --provider DATANUCLEUS --database GOOGLE_APP_ENGINE --applicationId utdraget
+// Spring Roo 1.1.0.M1 [rev 3a0b8a3] log opened at 2010-08-04 14:43:15
+persistence setup --provider DATANUCLEUS --database HYPERSONIC_IN_MEMORY
+version 
+exit
+// Spring Roo 1.1.0.M1 [rev 3a0b8a3] log closed at 2010-08-04 15:21:15
+// Spring Roo 1.1.0.M2 [rev 0b3543e] log opened at 2010-08-04 15:21:53
+exit
+// Spring Roo 1.1.0.M2 [rev 0b3543e] log closed at 2010-08-04 15:22:32
+// Spring Roo 1.1.0.M2 [rev 0b3543e] log opened at 2010-08-04 15:22:36
+exit
+// Spring Roo 1.1.0.M2 [rev 0b3543e] log closed at 2010-08-04 15:23:28
