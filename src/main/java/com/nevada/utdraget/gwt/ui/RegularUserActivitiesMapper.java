@@ -11,30 +11,25 @@ import com.nevada.utdraget.gwt.scaffold.place.ApplicationPlace;
 import com.nevada.utdraget.gwt.request.ApplicationRequestFactory;
 
 /**
- * Maps {@link ${entity.detailsPlace} instances to the {@link Activity} to run.
+ * Maps {@link ${entity.detailsPlace}} instances to the {@link Activity} to run.
  */
-public class RegularUserActivitiesMapper implements
-    ActivityMapper<RegularUserScaffoldPlace> {
-  private final ApplicationRequestFactory requests;
-  private final PlaceController<ApplicationPlace> placeController;
+public class RegularUserActivitiesMapper implements ActivityMapper<RegularUserScaffoldPlace> {
+	private final ApplicationRequestFactory requests;
+	private final PlaceController<ApplicationPlace> placeController;
 
-  public RegularUserActivitiesMapper(ApplicationRequestFactory requests,
-      PlaceController<ApplicationPlace> placeController) {
-    this.requests = requests;
-    this.placeController = placeController;
-  }
+	public RegularUserActivitiesMapper(ApplicationRequestFactory requests, PlaceController<ApplicationPlace> placeController) {
+		this.requests = requests;
+		this.placeController = placeController;
+	}
 
-  public Activity getActivity(RegularUserScaffoldPlace place) {
-    switch (place.getOperation()) {
-      case DETAILS:
-        return new RegularUserDetailsActivity(place.getId(), requests, placeController);
+	public Activity getActivity(RegularUserScaffoldPlace place) {
+		switch (place.getOperation()) {
+		case DETAILS:
+			return new RegularUserDetailsActivity(place.getId(), requests, placeController);
+		case EDIT:
+			return new RegularUserEditActivity(place.getId(), requests, placeController);
+		}
 
-      case EDIT:
-        return new RegularUserEditActivity(place.getId(), requests,
-            placeController);
-    }
-
-    throw new IllegalArgumentException("Unknown operation "
-        + place.getOperation());
-  }
+		throw new IllegalArgumentException("Unknown operation " + place.getOperation());
+	}
 }

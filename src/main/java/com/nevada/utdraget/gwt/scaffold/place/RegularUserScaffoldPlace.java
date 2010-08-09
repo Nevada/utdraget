@@ -10,21 +10,21 @@ import com.nevada.utdraget.gwt.scaffold.place.ApplicationRecordPlace;
  */
 public class RegularUserScaffoldPlace extends ApplicationRecordPlace {
 
-  public RegularUserScaffoldPlace(RegularUserRecord record, Operation operation) {
-    super(record.getId(), operation);
-  }
+	public RegularUserScaffoldPlace(RegularUserRecord record, Operation operation) {
+		super(record.getId(), operation);
+	}
 
-  public RegularUserScaffoldPlace(String id, Operation operation) {
-    super(id, operation);
-  }
+	public RegularUserScaffoldPlace(String id, Operation operation) {
+		super(id, operation);
+	}
 
-  @Override
-  public void accept(ApplicationPlaceProcessor visitor) {
-    visitor.process(this);
-  }
+	@Override
+	public void accept(ApplicationPlaceProcessor visitor) {
+		visitor.process(this);
+	}
 
-  @Override
-  public <T> T acceptFilter(ApplicationPlaceFilter<T> filter) {
-    return filter.filter(this);
-  }
+	@Override
+	public <T> T acceptFilter(ApplicationPlaceFilter<T> filter) {
+		return filter.filter(this);
+	}
 }

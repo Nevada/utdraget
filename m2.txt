@@ -1,0 +1,16 @@
+m2
+remove regularuser 
+    public RegularUser(String name, String pw) {
+        this.name = name;
+        this.pw = pw;
+    }
+
+    private String name;
+
+    private String email;
+
+    private String pw;
+	
+and 
+
+attached finders, findRegularUsersByName, findRegularUsersByNameAndPw
