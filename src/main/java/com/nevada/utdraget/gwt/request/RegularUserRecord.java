@@ -3,11 +3,11 @@ package com.nevada.utdraget.gwt.request;
 import com.google.gwt.valuestore.shared.Record;
 import org.springframework.roo.addon.gwt.RooGwtMirroredFrom;
 import com.nevada.utdraget.RegularUser;
-import com.google.gwt.requestfactory.shared.ServerType;
+import com.google.gwt.requestfactory.shared.DataTransferObject;
 import com.google.gwt.valuestore.shared.Property;
 
 @RooGwtMirroredFrom(RegularUser.class)
-@ServerType(type = RegularUser.class)
+@DataTransferObject(RegularUser.class)
 public interface RegularUserRecord extends Record {
 
     public String TOKEN = "RegularUserRecord";

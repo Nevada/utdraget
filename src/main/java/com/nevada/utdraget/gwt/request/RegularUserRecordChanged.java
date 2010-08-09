@@ -5,12 +5,10 @@ import com.nevada.utdraget.gwt.request.RegularUserRecord;
 import com.nevada.utdraget.gwt.request.RegularUserChangedHandler;
 import org.springframework.roo.addon.gwt.RooGwtMirroredFrom;
 import com.nevada.utdraget.RegularUser;
-import com.google.gwt.requestfactory.shared.ServerType;
 import com.google.gwt.event.shared.GwtEvent.Type;
-import com.google.gwt.requestfactory.shared.RequestFactory.WriteOperation;
+import com.google.gwt.valuestore.shared.WriteOperation;
 
 @RooGwtMirroredFrom(RegularUser.class)
-@ServerType(type = RegularUser.class)
 public class RegularUserRecordChanged extends RecordChangedEvent<RegularUserRecord, RegularUserChangedHandler> {
 
     public static final Type<com.nevada.utdraget.gwt.request.RegularUserChangedHandler> TYPE = new com.google.gwt.event.shared.GwtEvent.Type<com.nevada.utdraget.gwt.request.RegularUserChangedHandler>();
